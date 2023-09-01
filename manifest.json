@@ -1,0 +1,14 @@
+{
+  "name": "Resh Auto Log-in",
+  "description": "Автоматическая авторизация на РЭШ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["auth.js"],
+      "matches": ["https://resh.edu.ru/*", "http://resh.edu.ru/*", "http://resh.edu.ru/"]
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions":["https://resh.edu.ru/*", "http://resh.edu.ru/*", "http://resh.edu.ru/"]
+}
